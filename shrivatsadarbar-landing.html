@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrivatsadarbar – Sringar Offerings for Laddo Gopal</title>
+    <meta name="description" content="Shrivatsadarbar offers exquisite poshak, mukut, jewellery, jhula, accessories and more for Laddo Gopal (Kanha Ji). Where Sringar is an offering.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --brand-gold: #d4a853;
+            --brand-deep: #2d1f0e;
+            --brand-soft: #faf6f0;
+            --brand-accent: #b8860b;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--brand-soft);
+            color: #3a2a1a;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-gold {
+            color: var(--brand-gold);
+        }
+        .bg-gold {
+            background-color: var(--brand-gold);
+        }
+        .bg-deep {
+            background-color: var(--brand-deep);
+        }
+        .border-gold {
+            border-color: var(--brand-gold);
+        }
+        .hover-gold:hover {
+            background-color: var(--brand-gold);
+            color: #1a1106;
+            transition: all 0.3s ease;
+        }
+        .card-shadow {
+            box-shadow: 0 8px 24px rgba(45, 31, 14, 0.08);
+        }
+        .offer-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .offer-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(45, 31, 14, 0.15);
+        }
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(45,31,14,0.7) 0%, rgba(45,31,14,0.3) 100%);
+        }
+        .golden-divider {
+            height: 3px;
+            width: 80px;
+            background: linear-gradient(90deg, transparent, #d4a853, transparent);
+            margin: 0.75rem auto;
+        }
+        .footer-border {
+            border-top: 2px solid rgba(212, 168, 83, 0.25);
+        }
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="bg-deep text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-3 md:py-4">
+                <!-- Brand -->
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl"><i class="fas fa-feather-alt text-gold"></i></span>
+                    <span class="heading-font text-xl md:text-2xl font-bold tracking-wide">
+                        श्रीवत्सदरबार
+                    </span>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
+                    <!-- nav items injected -->
+                </nav>
+                <!-- Mobile Hamburger -->
+                <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- Mobile Nav (hidden by default) -->
+            <div id="mobile-menu" class="hidden pb-4 md:hidden">
+                <ul id="mobile-nav-list" class="flex flex-col gap-3 text-sm"></ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="relative bg-cover bg-center h-[70vh] min-h-[400px] flex items-center" style="background-image: url('https://picsum.photos/1600/900?random=101');">
+            <div class="hero-overlay absolute inset-0"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                <h1 class="heading-font text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 hero-title drop-shadow-lg">
+                    श्रीवत्सदरबार
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl font-light max-w-2xl mx-auto mb-2 drop-shadow">
+                    Exquisite Sringar for Laddo Gopal (Kanha Ji)
+                </p>
+                <div class="golden-divider"></div>
+                <p class="text-base sm:text-lg italic mt-2 opacity-90">
+                    <i class="fas fa-om mr-2 text-gold"></i> Where Sringar is an offering
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="#offerings" class="inline-block bg-gold text-deep font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300">
+                        <i class="fas fa-gem mr-2"></i>Explore Offerings
+                    </a>
+                    <a href="#contact" class="inline-block border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-deep transition duration-300">
+                        <i class="fas fa-phone-alt mr-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INTRO ===== -->
+        <section class="py-14 md:py-20 px-4 max-w-5xl mx-auto text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-deep">Sringar as Devotion</h2>
+            <div class="golden-divider"></div>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mt-4">
+                At <strong class="text-gold">Shrivatsadarbar</strong>, we believe adorning Laddo Gopal is a sacred act of love. 
+                Our handcrafted <strong>Poshak, Mukut, Jewellery, Jhula, Accessories</strong> and more are made with devotion 
+                and finest materials — because every detail of His Sringar is an offering.
+            </p>
+        </section>
+
+        <!-- ===== OFFERINGS GRID ===== -->
+        <section id="offerings" class="py-14 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-center text-deep">Our Offerings</h2>
+                <div class="golden-divider"></div>
+                <p class="text-center text-gray-600 mt-2 mb-10">Handcrafted with devotion for Kanha Ji's divine Sringar</p>
+                <div id="card-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+
+        <!-- ===== TAGLINE FULL ===== -->
+        <section class="py-16 bg-deep text-white text-center px-4">
+            <i class="fas fa-feather-alt text-5xl text-gold mb-4"></i>
+            <h2 class="heading-font text-3xl md:text-4xl font-bold">
+                “Where Sringar is an offering”
+            </h2>
+            <p class="max-w-2xl mx-auto mt-4 text-gray-300 text-lg">
+                Every stitch, every gem, every swing is crafted as a gesture of love for Laddo Gopal.
+            </p>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="py-14 md:py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-center text-deep">Reach Us</h2>
+                <div class="golden-divider"></div>
+                <p class="text-center text-gray-600 mt-2 mb-8">We'd love to help you with the perfect Sringar</p>
+                <div class="bg-white rounded-2xl card-shadow p-6 md:p-10">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="flex-1 space-y-5">
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-map-marker-alt text-gold text-xl mt-1 w-6"></i>
+                                <div>
+                                    <p class="font-semibold text-deep">Bhola and Prabha Niwas</p>
+                                    <p class="text-gray-600">Tatanpur, Padao, Dehradoon Public School Road</p>
+                                    <p class="text-gray-600">Mughalsari</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-phone-alt text-gold text-xl w-6"></i>
+                                <a href="tel:8826196544" class="text-lg font-semibold text-deep hover:text-gold transition">8826196544</a>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-envelope text-gold text-xl w-6"></i>
+                                <span class="text-gray-600">shrivatsadarbar@example.com</span>
+                            </div>
+                            <p class="text-sm text-gray-500 italic mt-4">
+                                <i class="fas fa-clock mr-1"></i> We respond within 24 hours
+                            </p>
+                        </div>
+                        <div class="flex-1 w-full">
+                            <div class="bg-gray-100 rounded-xl p-5 text-center">
+                                <i class="fas fa-feather-alt text-4xl text-gold mb-3"></i>
+                                <p class="font-semibold text-deep text-lg">Shrivatsadarbar</p>
+                                <div class="golden-divider"></div>
+                                <p class="text-gray-600 text-sm">Sringar offerings for Laddo Gopal</p>
+                                <div class="mt-4 flex justify-center gap-5 text-2xl text-gold">
+                                    <a href="#" aria-label="Instagram" class="hover:text-yellow-300 transition"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" aria-label="Facebook" class="hover:text-yellow-300 transition"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" aria-label="WhatsApp" class="hover:text-yellow-300 transition"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-deep text-gray-300 pt-12 pb-6 px-4 footer-border">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <h3 class="heading-font text-xl font-bold text-white mb-3">
+                        <i class="fas fa-feather-alt text-gold mr-2"></i>श्रीवत्सदरबार
+                    </h3>
+                    <p class="text-sm leading-relaxed">Sringar offerings for Laddo Gopal. Where devotion meets craftsmanship.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+                    <ul id="footer-links" class="space-y-2 text-sm"></ul>
+                </div>
+                <!-- Categories -->
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Categories</h4>
+                    <ul id="footer-categories" class="space-y-2 text-sm"></ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-phone-alt mr-2 text-gold"></i>8826196544</li>
+                        <li><i class="fas fa-map-pin mr-2 text-gold"></i>Mughalsari</li>
+                        <li><i class="fas fa-envelope mr-2 text-gold"></i>shrivatsadarbar@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-500">
+                &copy; 2025 Shrivatsadarbar — All rights reserved. | Where Sringar is an offering
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========== DATA LAYER ==========
+
+        const navItems = [
+            { label: "Home", href: "#hero" },
+            { label: "Offerings", href: "#offerings" },
+            { label: "Contact", href: "#contact" }
+        ];
+
+        const cards = [
+            { title: "Poshak", desc: "Exquisite hand-stitched outfits for Kanha Ji — from rich silks to embroidered dhotis.", img: "https://picsum.photos/600/400?random=1", alt: "Poshak for Laddo Gopal" },
+            { title: "Mukut", desc: "Divine crowns and headgear, adorned with pearls, kundan, and precious stones.", img: "https://picsum.photos/600/400?random=2", alt: "Mukut for Kanha Ji" },
+            { title: "Jewellery", desc: "Necklaces, bangles, waistbands, and anklets — all crafted for His adornment.", img: "https://picsum.photos/600/400?random=3", alt: "Jewellery for Laddo Gopal" },
+            { title: "Jhula", desc: "Beautifully crafted swings in wood and metal, with soft cushions and decorative details.", img: "https://picsum.photos/600/400?random=4", alt: "Jhula for Kanha Ji" },
+            { title: "Accessories", desc: "Flute, peacock feather, morpankh, chandan, tilak, and other sacred adornments.", img: "https://picsum.photos/600/400?random=5", alt: "Accessories for Laddo Gopal" },
+            { title: "Complete Sringar Sets", desc: "Curated sets with poshak, mukut, jewellery & accessories — ready to offer.", img: "https://picsum.photos/600/400?random=6", alt: "Complete Sringar set for Kanha Ji" }
+        ];
+
+        const footerLinks = [
+            { label: "Home", href: "#hero" },
+            { label: "Offerings", href: "#offerings" },
+            { label: "Contact", href: "#contact" },
+            { label: "Privacy Policy", href: "#" }
+        ];
+
+        const footerCategories = [
+            { label: "Poshak", href: "#" },
+            { label: "Mukut", href: "#" },
+            { label: "Jewellery", href: "#" },
+            { label: "Jhula", href: "#" },
+            { label: "Accessories", href: "#" }
+        ];
+
+        // ========== RENDER FUNCTIONS ==========
+
+        function renderNav(items) {
+            return items.map(item =>
+                `<li><a href="${item.href}" class="hover:text-gold transition text-sm font-medium tracking-wide">${item.label}</a></li>`
+            ).join('');
+        }
+
+        function renderCards(items) {
+            return items.map((item, index) =>
+                `<article class="offer-card bg-white rounded-2xl overflow-hidden card-shadow border border-gray-100">
+                    <img src="${item.img}" alt="${item.alt}" loading="lazy" class="w-full h-56 object-cover">
+                    <div class="p-5">
+                        <h3 class="heading-font text-xl font-bold text-deep mb-2">${item.title}</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">${item.desc}</p>
+                        <a href="#contact" class="inline-block mt-4 text-sm font-semibold text-gold hover:text-yellow-600 transition">
+                            Enquire <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </article>`
+            ).join('');
+        }
+
+        function renderFooterLinks(items) {
+            return items.map(item =>
+                `<li><a href="${item.href}" class="hover:text-gold transition">${item.label}</a></li>`
+            ).join('');
+        }
+
+        function renderFooterCategories(items) {
+            return items.map(item =>
+                `<li><a href="${item.href}" class="hover:text-gold transition">${item.label}</a></li>`
+            ).join('');
+        }
+
+        // ========== MOUNT ==========
+
+        // Desktop nav
+        const desktopNav = document.getElementById('desktop-nav');
+        if (desktopNav) {
+            desktopNav.innerHTML = renderNav(navItems);
+        }
+
+        // Mobile nav list
+        const mobileNavList = document.getElementById('mobile-nav-list');
+        if (mobileNavList) {
+            mobileNavList.innerHTML = renderNav(navItems);
+        }
+
+        // Card grid
+        const cardGrid = document.getElementById('card-grid');
+        if (cardGrid) {
+            cardGrid.innerHTML = renderCards(cards);
+        }
+
+        // Footer links
+        const footerLinksContainer = document.getElementById('footer-links');
+        if (footerLinksContainer) {
+            footerLinksContainer.innerHTML = renderFooterLinks(footerLinks);
+        }
+
+        // Footer categories
+        const footerCategoriesContainer = document.getElementById('footer-categories');
+        if (footerCategoriesContainer) {
+            footerCategoriesContainer.innerHTML = renderFooterCategories(footerCategories);
+        }
+
+        // ========== EVENT DELEGATION ==========
+
+        document.addEventListener('click', function(e) {
+            // Smooth scroll for anchor links
+            const link = e.target.closest('a[href^="#"]');
+            if (link) {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                return;
+            }
+
+            // Mobile menu toggle
+            const toggle = e.target.closest('#menu-toggle');
+            if (toggle) {
+                e.preventDefault();
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu) {
+                    mobileMenu.classList.toggle('hidden');
+                }
+            }
+        });
+
+        // Close mobile menu on resize to desktop
+        window.addEventListener('resize', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (window.innerWidth >= 768 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
